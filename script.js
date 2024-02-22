@@ -11,25 +11,31 @@ submitBtn.addEventListener('click', function() {
 
 
 function submitForm(){
-    const emailInput = document.querySelector("#email").value;
+    const emailInput = document.querySelector("#email");
     const error = document.querySelector(".error");
     const signUpEnd = document.querySelector(".sign-up-end");
     const signUpStart = document.querySelector(".sign-up-start");
     
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    if(emailInput === ""){
+    if(emailInput.value === ""){
         error.classList.add("hidden");
+        emailInput.style.backgroundColor = "";
+        emailInput.style.borderColor = "";
         return;
     }
 
-    if (!emailRegex.test(emailInput)) {
+    if (!emailRegex.test(emailInput.value)) {
         error.classList.remove("hidden");
+        emailInput.style.backgroundColor = "tomato";
+        emailInput.style.borderColor = "red";
         return;
     }
 
-    writtenEmail.innerHTML = emailInput;
+
+    writtenEmail.innerHTML = emailInput.value;
 
     signUpEnd.classList.remove("hidden");
     signUpStart.classList.add("hidden");
 };
+
