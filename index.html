@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+<body>
+
+  <main>
+
+    <div class="sign-up-start">
+      <div class="bcg-img-container"></div>
+      <div class="main-info">
+        <h1 class="title-start">Stay updated!</h1>
+        <p class="description-start">Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li class="icon-list">Product discovery and building what matters</li>
+          <li class="icon-list">Measuring to ensure updates are a success</li>
+          <li class="icon-list">And much more!</li>
+        </ul>
+        <div class="email-info">
+          <p class="lettering">Email address</p> <p class="error hidden">Valid email required</p>
+        </div>
+        <form action="">
+          <input type="email" id="email" name="email" placeholder="email@company.com">
+          <button class="submit-btn" type="submit">Subscribe to monthly newsletter</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="sign-up-end hidden">
+      <img class="icon-success" src="assets/icon-success.svg" alt="">
+      <h1 class="title-end">Thanks for subscribing!</h1>
+      <p class="description-end">A confirmation email has been sent to <span class="written-email"></span>. Please open it and click the button inside to confirm your subscription.</p>
+      <div class="dismiss-div">
+        <button type="submit" class="dismiss-btn">Dismiss message</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
