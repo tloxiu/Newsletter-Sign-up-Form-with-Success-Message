@@ -23,8 +23,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [(https://newsletter-sign-up-form-with-success-message-zeta-jet.vercel.app/)](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [(https://newsletter-sign-up-form-with-success-message-zeta-jet.vercel.app/)]([https://your-solution-url.com](https://newsletter-sign-up-form-with-success-message-zeta-jet.vercel.app))
 
 ### Built with
 
